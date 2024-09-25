@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.center {
+  @apply flex items-center justify-center;
+}
+.hover-effect {
+  @apply hover:text-hover ease-in duration-300 hover:tracking-wide;
+}
+.border1 {
+  @apply border-b-[1px] pb-3 pt-5 border-border;
+}

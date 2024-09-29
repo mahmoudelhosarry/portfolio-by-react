@@ -5,10 +5,10 @@ const Header = () => {
     setevent(!event);
   };
   return (
-    <div className="text-secondary w-4/5 mx-auto  flex  justify-between items-center ">
+    <div className="text-secondary w-4/5 mx-auto  flex  justify-between items-center  ">
       <button
         onClick={toggleMenu}
-        className="block md:hidden mt-3 rounded-full bg-[#252529] p-2 border-2 border-border hover:border-yellow-700 active:scale-90"
+        className="block md:hidden mt-6 rounded-full bg-[#252529] p-2 border-2 border-border hover:border-yellow-700 active:scale-90"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +76,8 @@ const Header = () => {
         </ul>
       </div>
       <div></div>
-      <nav className="hidden md:block md mt-3">
-        <ul className="center gap-4 rounded-full bg-accent text-[#ffffff] p-3 font-light px-9">
+      <nav className="hidden md:block md mt-6">
+        <ul className="center gap-4 rounded-2xl bg-accent text-[#ffffff] p-3 font-light px-9">
           <li>
             <a className="hover-effect" href="">
               About
@@ -105,7 +105,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <button className="mt-3 rounded-full bg-[#252529] p-2 border-2 border-border hover:border-yellow-700 active:scale-90">
+      <button className="mt-6 rounded-full bg-[#252529] p-2 border-2 border-border hover:border-yellow-700 active:scale-90">
         {" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"

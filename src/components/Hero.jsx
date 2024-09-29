@@ -2,17 +2,17 @@ const Hero = () => {
   return (
     <sction className="flex mt-10 w-4/5 mx-auto ">
       <div className="">
-        <div className="grow  flex items-end mb-4">
+        <div className="   flex items-end justify-center md:justify-start mb-9 py-2">
           <img
-            className="w-1/12 rounded-full border-[1px] border-yellow-700 p-1"
+            className="flex rounded-full border-[1px] border-yellow-700 p-1  w-[150px] md:w-[90px]         "
             src="/me-modified.png"
           />
-          <div className="mb-1">
+          <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               fill="#000"
-              className="icon flat-line"
+              className="icon flat-line "
               data-name="Flat Line"
               viewBox="0 0 24 24"
             >

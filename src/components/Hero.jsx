@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <sction className="flex mt-10 w-4/5 mx-auto ">
+    <section className="flex mt-10 w-4/5 mx-auto ">
       <div className="">
         <div className="   flex items-end justify-center md:justify-start mb-9 py-2">
           <img
@@ -120,7 +120,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </sction>
+    </section>
   );
 };
 

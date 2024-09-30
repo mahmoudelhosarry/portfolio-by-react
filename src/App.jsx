@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-backgroundColor w-4/5 mx-auto">
+    <div className="bg-backgroundColor w-full md:w-4/5 mx-auto">
       <Header />
       <Hero />
       <div className="border1"></div>

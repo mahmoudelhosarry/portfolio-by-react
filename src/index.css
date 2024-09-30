@@ -38,7 +38,7 @@ html {
   @apply border-b-[1px] pb-3 pt-5 border-border;
 }
 .button-style {
-  @apply capitalize text-secondary text-xl py-4 bg-[#24252e] w-32 md:w-44 transition duration-300 font-medium hover:text-2xl rounded-2xl hover:font-black border-2 border-backgroundColor hover:border-[#3b82f680] hover:tracking-wide active:scale-95;
+  @apply capitalize text-secondary text-xl py-4 bg-[#24252e] w-28 sm:w-36 md:w-44 transition duration-300 font-medium hover:text-2xl rounded-2xl hover:font-black border-2 border-backgroundColor hover:border-[#3b82f680] hover:tracking-wide active:scale-95;
 }
 .h-style {
   @apply font-bold text-xl md:text-3xl text-secondary;

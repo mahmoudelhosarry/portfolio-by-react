@@ -50,7 +50,7 @@ const Contact = () => {
       </div>
       <button
         type="submit"
-        className=" submit capitalize text-secondary text-xl py-4 bg-[#24252e] w-3/4 md:w-44 transition duration-300 font-medium hover:text-2xl rounded-2xl hover:font-black border-2 border-backgroundColor hover:border-[#3b82f680] hover:tracking-wide active:scale-95 mt-5"
+        className=" submit capitalize text-secondary text-xl py-4 bg-[#24252e] w-3/4 md:w-44 transition duration-300 font-medium   rounded-2xl hover:font-black border-2 border-backgroundColor hover:border-yellow-700 hover:tracking-wide active:scale-95 mt-5"
       >
         Submit
       </button>

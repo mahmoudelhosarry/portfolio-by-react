@@ -13,9 +13,12 @@ const Main = () => {
           return (
             <div
               key={item}
-              className=" border-backgroundColor hover:border-[#3b82f680]  hover:cursor-pointer   w-36 sm:w-56 bg-gradient-to-r from-[#ffffff0d] to-[#ffffff10] rounded-2xl hover:scale-105 hover:border-blue-500"
+              className=" border-backgroundColor border-2 hover:border-[#3b82f680]  hover:cursor-pointer   w-36 sm:w-56 bg-gradient-to-r from-[#ffffff0d] to-[#ffffff10] rounded-2xl hover:scale-105 hover:border-yellow-700"
             >
-              <img src="/player.png" className=" mx-auto rounded-2xl " />
+              <img
+                src="/player.png"
+                className=" mx-auto rounded-2xl border-2 border-backgroundColor hover:border-yellow-700 "
+              />
               <div className="px-2 w-36 sm:w-56  ">
                 <h1 className="h-style mt-3">Dice Challenge</h1>
                 <p className="p-style mb-4 break-words">

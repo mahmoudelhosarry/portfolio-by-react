@@ -4,14 +4,14 @@ const myProjects = [
   {
     category: ["js", "all"],
     projectName: "Dice Challenge",
-    pic: "../../public/player.png",
+    pic: "/player.png",
     link: "https://mahmoudelhosarry.github.io/Dice-challenge/",
     github: "https://github.com/mahmoudelhosarry/Dice-challenge",
   },
   {
     category: ["tailwend", "all"],
     projectName: "Avatar",
-    pic: "../../public/avatar.png",
+    pic: "/avatar.png",
     link: "https://mahmoudelhosarry.github.io/tailwend-project/",
     github: "https://github.com/mahmoudelhosarry/tailwend-project",
   },
@@ -19,7 +19,7 @@ const myProjects = [
   {
     category: ["js", "html", "css", "all"],
     projectName: "cruds",
-    pic: "../../public/cruds.png",
+    pic: "/cruds.png",
     link: "https://mahmoudelhosarry.github.io/CRUDS/",
     github: "https://github.com/mahmoudelhosarry/CRUDS",
   },

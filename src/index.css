@@ -39,11 +39,14 @@ html {
   @apply border-b-[1px] pb-3 pt-5 border-border;
 }
 .button-style {
-  @apply capitalize text-secondary text-xl py-4 bg-[#24252e] w-28 sm:w-36 md:w-44 transition duration-300 font-medium rounded-2xl hover:font-black border-2 border-backgroundColor hover:border-yellow-700 hover:tracking-wide active:scale-95;
+  @apply capitalize text-secondary text-xl py-4 bg-[#24252e] w-28 sm:w-36 md:w-44 transition duration-300 font-medium rounded-2xl hover:font-black border-2 border-backgroundColor  active:scale-95;
 }
 .h-style {
   @apply font-bold text-xl md:text-3xl text-secondary;
 }
 .p-style {
   @apply font-normal text-lg text-third;
+}
+.hover2 {
+  @apply border-yellow-700;
 }

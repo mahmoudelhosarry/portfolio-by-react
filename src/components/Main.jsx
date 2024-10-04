@@ -1,32 +1,105 @@
+// hover:border-yellow-700
+import { useState } from "react";
+const myProjects = [
+  {
+    category: ["js", "all"],
+    projectName: "Dice Challenge",
+    pic: "../../public/player.png",
+    link: "https://mahmoudelhosarry.github.io/Dice-challenge/",
+    github: "https://github.com/mahmoudelhosarry/Dice-challenge",
+  },
+  {
+    category: ["tailwend", "all"],
+    projectName: "Avatar",
+    pic: "../../public/avatar.png",
+    link: "https://mahmoudelhosarry.github.io/tailwend-project/",
+    github: "https://github.com/mahmoudelhosarry/tailwend-project",
+  },
+
+  {
+    category: ["js", "html", "css", "all"],
+    projectName: "cruds",
+    pic: "../../public/cruds.png",
+    link: "https://mahmoudelhosarry.github.io/CRUDS/",
+    github: "https://github.com/mahmoudelhosarry/CRUDS",
+  },
+];
 const Main = () => {
+  const [border, setborder] = useState(false);
+  const [sort, setSort] = useState(myProjects);
   return (
-    <div className="  flex flex-col sm:flex-row   w-full md:w-4/5 mx-auto mt-5  ">
+    <div className="  flex flex-col sm:flex-row  gap-x-10  w-full md:w-4/5 mx-auto mt-5  ">
       <div className="  flex flex-wrap justify-center md:flex-col md:justify-start content-start gap-y-1 mb-5 ">
-        <button className="button-style">all projects</button>
-        <button className="button-style">html & css</button>
-        <button className="button-style">tailwend</button>
-        <button className="button-style">javascript</button>
-        <button className="button-style">react</button>
+        <button
+          onClick={() => {
+            setborder("all");
+            const all = myProjects.filter((project) => {
+              return project.category.includes("all");
+            });
+            setSort(all);
+          }}
+          className={`${border === "all" ? "hover2" : "null"} button-style`}
+        >
+          all projects
+        </button>
+        <button
+          onClick={() => {
+            setborder("css");
+            const css = myProjects.filter((project) => {
+              return project.category.includes("css");
+            });
+            setSort(css);
+          }}
+          className={`${border === "css" ? "hover2" : "null"} button-style`}
+        >
+          html & css
+        </button>
+        <button
+          onClick={() => {
+            setborder("tailwend");
+            const tailwend = myProjects.filter((project) => {
+              return project.category.includes("tailwend");
+            });
+            setSort(tailwend);
+          }}
+          className={`${
+            border === "tailwend" ? "hover2" : "null"
+          } button-style`}
+        >
+          tailwend
+        </button>
+        <button
+          onClick={() => {
+            setborder("js");
+            const js = myProjects.filter((project) => {
+              return project.category.includes("js");
+            });
+            setSort(js);
+          }}
+          className={`${border === "js" ? "hover2" : "null"} button-style`}
+        >
+          javascript
+        </button>
       </div>
-      <div className="   flex flex-wrap  gap-x-3 gap-y-5 justify-center   ">
-        {["aa", "bb", "cc", "dd", "vv", "ss", "ww"].map((item) => {
+      <div className="   flex flex-wrap  gap-x-3 gap-y-5 justify-center mx-auto  ">
+        {sort.map((item) => {
           return (
             <div
-              key={item}
-              className=" border-backgroundColor border-2 hover:border-[#3b82f680]  hover:cursor-pointer   w-36 sm:w-56 bg-gradient-to-r from-[#ffffff0d] to-[#ffffff10] rounded-2xl hover:scale-105 hover:border-yellow-700"
+              key={item.pic}
+              className=" border-backgroundColor border-2 hover:border-[#3b82f680]  hover:cursor-pointer   bg-gradient-to-r from-[#ffffff0d] to-[#ffffff10] rounded-2xl hover:scale-105 hover:border-yellow-700"
             >
               <img
-                src="/player.png"
-                className=" mx-auto rounded-2xl border-2 border-backgroundColor hover:border-yellow-700 "
+                src={item.pic}
+                className=" mx-auto rounded-2xl border-2 border-backgroundColor hover:border-yellow-700  w-36 sm:w-56 "
               />
               <div className="px-2 w-36 sm:w-56  ">
-                <h1 className="h-style mt-3">Dice Challenge</h1>
+                <h1 className="h-style mt-3">{item.projectName}</h1>
                 <p className="p-style mb-4 break-words">
                   facascascacaasascsacascacacsascasc
                 </p>
 
                 <div className="flex gap-3 mb-2">
-                  <a href="https://mahmoudelhosarry.github.io/Dice-challenge/">
+                  <a href={item.link}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -43,7 +116,7 @@ const Main = () => {
                       ></path>
                     </svg>
                   </a>
-                  <a href="https://github.com/mahmoudelhosarry/Dice-challenge">
+                  <a href={item.github}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"

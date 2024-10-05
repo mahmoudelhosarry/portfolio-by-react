@@ -59,7 +59,7 @@ const Header = () => {
             </a>
           </li>
           <li className="border1 ">
-            <a className="hover-effect" href="">
+            <a className="hover-effect" href="#main">
               Projects
             </a>
           </li>

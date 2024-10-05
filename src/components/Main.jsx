@@ -28,7 +28,10 @@ const Main = () => {
   const [border, setborder] = useState(false);
   const [sort, setSort] = useState(myProjects);
   return (
-    <div className="  flex flex-col sm:flex-row  gap-x-10  w-full md:w-4/5 mx-auto mt-5  ">
+    <div
+      id="main"
+      className="  flex flex-col sm:flex-row  gap-x-10  w-full md:w-4/5 mx-auto mt-5"
+    >
       <div className="  flex flex-wrap justify-center md:flex-col md:justify-start content-start gap-y-1 mb-5 ">
         <button
           onClick={() => {

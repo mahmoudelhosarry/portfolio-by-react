@@ -1,6 +1,29 @@
+import { useEffect, useState } from "react";
+
 const Contact = () => {
+  const [products, setProducts] = useState();
+  const [searchTerm, setSearchTerm] = useState(false);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch(
+        "https://www.searchapi.io/api/v1/search?engine=youtube&q=Fortnite"
+      );
+      const data = await response.json();
+      setProducts(data);
+    };
+    fetchProducts();
+  }, []);
+  console.log(products);
+  function pshow(e) {
+    e.preventDefault();
+    setSearchTerm(true);
+  }
+
   return (
-    <form className="mt-3 w-4/5 mx-auto flex flex-col items-center md:justify-start md:items-start">
+    <form
+      onSubmit={pshow}
+      className="mt-3 w-4/5 mx-auto flex flex-col items-center md:justify-start md:items-start"
+    >
       <div>
         <div className="flex flex-col  items-center  md:flex-row  gap-3 mb-4">
           <svg
@@ -54,6 +77,9 @@ const Contact = () => {
       >
         Submit
       </button>
+      <p className={`${searchTerm ? "block" : "hidden"} p-style mt-6 `}>
+        Thanks!
+      </p>
     </form>
   );
 };

@@ -21,7 +21,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <p className="font-light text-base text-third">
+      <p className="font-light text-base text-third text-pretty ">
         © 2024 Spencer Sharp. All rights reserved.
       </p>
     </footer>
